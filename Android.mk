@@ -19,6 +19,26 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),tiffany)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libloc_api_v02
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/lib64/libloc_api_v02.so
+LOCAL_MULTILIB := 64
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libloc_ds_api
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/lib64/libloc_ds_api.so
+LOCAL_MULTILIB := 64
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libsdm-disp-apis
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/libsdm-disp-apis.so
@@ -54,9 +74,31 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libts_detected_face_jni
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/vendor/lib/libts_detected_face_jni.so
+LOCAL_MULTILIB := 32
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libts_face_beautify_hal
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES := proprietary/vendor/lib/libts_face_beautify_hal.so
+LOCAL_MULTILIB := 32
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+LOCAL_PROPRIETARY_MODULE := true
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libts_face_beautify_jni
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/vendor/lib/libts_face_beautify_jni.so
 LOCAL_MULTILIB := 32
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -101,17 +143,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := embms
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES := proprietary/app/embms/embms.apk
-LOCAL_CERTIFICATE := platform
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := APPS
-LOCAL_DEX_PREOPT := false
-LOCAL_MODULE_SUFFIX := .apk
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
-LOCAL_MODULE := fastdormancy
-LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/app/fastdormancy/fastdormancy.apk
 LOCAL_CERTIFICATE := platform
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := APPS
@@ -203,6 +234,36 @@ LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := com.qti.location.sdk
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/framework/com.qti.location.sdk.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := com.qualcomm.location.vzw_library
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/framework/com.qualcomm.location.vzw_library.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := izat.xt.srv
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/framework/izat.xt.srv.jar
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := JAVA_LIBRARIES
+LOCAL_MODULE_SUFFIX := .jar
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := qcrilhook
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES := proprietary/framework/qcrilhook.jar
@@ -213,9 +274,18 @@ LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := com.qti.location.sdk
+LOCAL_MODULE := qdcm_calib_data_ft8716_fhd_video_mode_dsi_panel
 LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES := proprietary/etc/permissions/com.qti.location.sdk.xml
+LOCAL_SRC_FILES := proprietary/etc/qdcm_calib_data_ft8716_fhd_video_mode_dsi_panel.xml
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_SUFFIX := .xml
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := qdcm_calib_data_ili7807_fhd_video_mode_dsi_panel
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/etc/qdcm_calib_data_ili7807_fhd_video_mode_dsi_panel.xml
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_SUFFIX := .xml
@@ -234,6 +304,15 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := qdcm_calib_data_nt35596_tianma_fhd_video_mode_dsi_panel
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES := proprietary/etc/qdcm_calib_data_nt35596_tianma_fhd_video_mode_dsi_panel.xml
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_SUFFIX := .xml
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := qdcm_calib_data_otm1911_fhd_video_mode_dsi_panel
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES := proprietary/etc/qdcm_calib_data_otm1911_fhd_video_mode_dsi_panel.xml
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_SUFFIX := .xml

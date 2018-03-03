@@ -30,6 +30,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
     vendor/xiaomi/tiffany/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
     vendor/xiaomi/tiffany/proprietary/bin/iop:system/bin/iop \
+    vendor/xiaomi/tiffany/proprietary/bin/ipacm:system/bin/ipacm \
     vendor/xiaomi/tiffany/proprietary/bin/ipacm-diag:system/bin/ipacm-diag \
     vendor/xiaomi/tiffany/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/xiaomi/tiffany/proprietary/bin/loc_launcher:system/bin/loc_launcher \
@@ -39,7 +40,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/xiaomi/tiffany/proprietary/bin/pm-proxy:system/bin/pm-proxy \
     vendor/xiaomi/tiffany/proprietary/bin/pm-service:system/bin/pm-service \
-    vendor/xiaomi/tiffany/proprietary/bin/port-bridge:system/bin/port-bridge \
     vendor/xiaomi/tiffany/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/xiaomi/tiffany/proprietary/bin/radish:system/bin/radish \
     vendor/xiaomi/tiffany/proprietary/bin/rmt_storage:system/bin/rmt_storage \
@@ -48,6 +48,20 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/xiaomi/tiffany/proprietary/bin/wcnss_filter:system/bin/wcnss_filter \
     vendor/xiaomi/tiffany/proprietary/bin/wcnss_service:system/bin/wcnss_service \
+    vendor/xiaomi/tiffany/proprietary/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb \
+    vendor/xiaomi/tiffany/proprietary/etc/acdbdata/MTP/MTP_General_cal.acdb:system/etc/acdbdata/MTP/MTP_General_cal.acdb \
+    vendor/xiaomi/tiffany/proprietary/etc/acdbdata/MTP/MTP_Global_cal.acdb:system/etc/acdbdata/MTP/MTP_Global_cal.acdb \
+    vendor/xiaomi/tiffany/proprietary/etc/acdbdata/MTP/MTP_Handset_cal.acdb:system/etc/acdbdata/MTP/MTP_Handset_cal.acdb \
+    vendor/xiaomi/tiffany/proprietary/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb:system/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb \
+    vendor/xiaomi/tiffany/proprietary/etc/acdbdata/MTP/MTP_Headset_cal.acdb:system/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
+    vendor/xiaomi/tiffany/proprietary/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
+    vendor/xiaomi/tiffany/proprietary/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Bluetooth_cal.acdb:system/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Bluetooth_cal.acdb \
+    vendor/xiaomi/tiffany/proprietary/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_General_cal.acdb:system/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_General_cal.acdb \
+    vendor/xiaomi/tiffany/proprietary/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Global_cal.acdb:system/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Global_cal.acdb \
+    vendor/xiaomi/tiffany/proprietary/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Handset_cal.acdb:system/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Handset_cal.acdb \
+    vendor/xiaomi/tiffany/proprietary/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Hdmi_cal.acdb:system/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Hdmi_cal.acdb \
+    vendor/xiaomi/tiffany/proprietary/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Headset_cal.acdb:system/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Headset_cal.acdb \
+    vendor/xiaomi/tiffany/proprietary/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Speaker_cal.acdb:system/etc/acdbdata/MTP/msm8953-tasha-snd-card/MTP_WCD9335_Speaker_cal.acdb \
     vendor/xiaomi/tiffany/proprietary/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb:system/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb \
     vendor/xiaomi/tiffany/proprietary/etc/acdbdata/QRD/QRD_General_cal.acdb:system/etc/acdbdata/QRD/QRD_General_cal.acdb \
     vendor/xiaomi/tiffany/proprietary/etc/acdbdata/QRD/QRD_Global_cal.acdb:system/etc/acdbdata/QRD/QRD_Global_cal.acdb \
@@ -64,12 +78,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/etc/camera/ov12a10_arc_ofilm_chromatix.xml:system/etc/camera/ov12a10_arc_ofilm_chromatix.xml \
     vendor/xiaomi/tiffany/proprietary/etc/camera/ov12a10_chromatix.xml:system/etc/camera/ov12a10_chromatix.xml \
     vendor/xiaomi/tiffany/proprietary/etc/camera/ov12a10_ofilm_chromatix.xml:system/etc/camera/ov12a10_ofilm_chromatix.xml \
-    vendor/xiaomi/tiffany/proprietary/etc/camera/ov13850_chromatix.xml:system/etc/camera/ov13850_chromatix.xml \
     vendor/xiaomi/tiffany/proprietary/etc/camera/ov13880_arc_chromatix.xml:system/etc/camera/ov13880_arc_chromatix.xml \
     vendor/xiaomi/tiffany/proprietary/etc/camera/ov13880_arc_ofilm_chromatix.xml:system/etc/camera/ov13880_arc_ofilm_chromatix.xml \
     vendor/xiaomi/tiffany/proprietary/etc/camera/ov13880_chromatix.xml:system/etc/camera/ov13880_chromatix.xml \
     vendor/xiaomi/tiffany/proprietary/etc/camera/ov13880_ofilm_chromatix.xml:system/etc/camera/ov13880_ofilm_chromatix.xml \
-    vendor/xiaomi/tiffany/proprietary/etc/camera/ov5675_qtech_chromatix.xml:system/etc/camera/ov5675_qtech_chromatix.xml \
     vendor/xiaomi/tiffany/proprietary/etc/camera/s5k5e8_ofilm_chromatix.xml:system/etc/camera/s5k5e8_ofilm_chromatix.xml \
     vendor/xiaomi/tiffany/proprietary/etc/camera/s5k5e8_qtech_chromatix.xml:system/etc/camera/s5k5e8_qtech_chromatix.xml \
     vendor/xiaomi/tiffany/proprietary/etc/camera/s5k5e8_sunny_chromatix.xml:system/etc/camera/s5k5e8_sunny_chromatix.xml \
@@ -101,8 +113,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/etc/firmware/a506_zap.b02:system/etc/firmware/a506_zap.b02 \
     vendor/xiaomi/tiffany/proprietary/etc/firmware/a506_zap.elf:system/etc/firmware/a506_zap.elf \
     vendor/xiaomi/tiffany/proprietary/etc/firmware/a506_zap.mdt:system/etc/firmware/a506_zap.mdt \
+    vendor/xiaomi/tiffany/proprietary/etc/firmware/a530_gpmu.fw2:system/etc/firmware/a530_gpmu.fw2 \
     vendor/xiaomi/tiffany/proprietary/etc/firmware/a530_pfp.fw:system/etc/firmware/a530_pfp.fw \
     vendor/xiaomi/tiffany/proprietary/etc/firmware/a530_pm4.fw:system/etc/firmware/a530_pm4.fw \
+    vendor/xiaomi/tiffany/proprietary/etc/firmware/a530v1_pfp.fw:system/etc/firmware/a530v1_pfp.fw \
+    vendor/xiaomi/tiffany/proprietary/etc/firmware/a530v1_pm4.fw:system/etc/firmware/a530v1_pm4.fw \
+    vendor/xiaomi/tiffany/proprietary/etc/firmware/a530v2_seq.fw2:system/etc/firmware/a530v2_seq.fw2 \
+    vendor/xiaomi/tiffany/proprietary/etc/firmware/a530v3_gpmu.fw2:system/etc/firmware/a530v3_gpmu.fw2 \
+    vendor/xiaomi/tiffany/proprietary/etc/firmware/a530v3_seq.fw2:system/etc/firmware/a530v3_seq.fw2 \
+    vendor/xiaomi/tiffany/proprietary/etc/firmware/a540_gpmu.fw2:system/etc/firmware/a540_gpmu.fw2 \
     vendor/xiaomi/tiffany/proprietary/etc/firmware/cpp_firmware_v1_10_0.fw:system/etc/firmware/cpp_firmware_v1_10_0.fw \
     vendor/xiaomi/tiffany/proprietary/etc/firmware/cpp_firmware_v1_12_0.fw:system/etc/firmware/cpp_firmware_v1_12_0.fw \
     vendor/xiaomi/tiffany/proprietary/etc/firmware/cpp_firmware_v1_1_1.fw:system/etc/firmware/cpp_firmware_v1_1_1.fw \
@@ -113,8 +132,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/etc/firmware/cpp_firmware_v1_5_2.fw:system/etc/firmware/cpp_firmware_v1_5_2.fw \
     vendor/xiaomi/tiffany/proprietary/etc/firmware/cpp_firmware_v1_6_0.fw:system/etc/firmware/cpp_firmware_v1_6_0.fw \
     vendor/xiaomi/tiffany/proprietary/etc/firmware/cpp_firmware_v1_8_0.fw:system/etc/firmware/cpp_firmware_v1_8_0.fw \
-    vendor/xiaomi/tiffany/proprietary/etc/firmware/hbtp/hbtpcfg.dat:system/etc/firmware/hbtp/hbtpcfg.dat \
-    vendor/xiaomi/tiffany/proprietary/etc/firmware/hbtp/qtc800s_dsp.bin:system/etc/firmware/hbtp/qtc800s_dsp.bin \
     vendor/xiaomi/tiffany/proprietary/etc/firmware/nvm_tlv.bin:system/etc/firmware/nvm_tlv.bin \
     vendor/xiaomi/tiffany/proprietary/etc/firmware/nvm_tlv_1.3.bin:system/etc/firmware/nvm_tlv_1.3.bin \
     vendor/xiaomi/tiffany/proprietary/etc/firmware/nvm_tlv_2.1.bin:system/etc/firmware/nvm_tlv_2.1.bin \
@@ -125,9 +142,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/etc/firmware/rampatch_tlv_2.1.tlv:system/etc/firmware/rampatch_tlv_2.1.tlv \
     vendor/xiaomi/tiffany/proprietary/etc/firmware/rampatch_tlv_3.0.tlv:system/etc/firmware/rampatch_tlv_3.0.tlv \
     vendor/xiaomi/tiffany/proprietary/etc/firmware/rampatch_tlv_3.2.tlv:system/etc/firmware/rampatch_tlv_3.2.tlv \
+    vendor/xiaomi/tiffany/proprietary/etc/morpho_lowlight4.0.xml:system/etc/morpho_lowlight4.0.xml \
     vendor/xiaomi/tiffany/proprietary/etc/permissions/ConnectivityExt.xml:system/etc/permissions/ConnectivityExt.xml \
     vendor/xiaomi/tiffany/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/xiaomi/tiffany/proprietary/etc/permissions/com.qti.dpmframework.xml:system/etc/permissions/com.qti.dpmframework.xml \
+    vendor/xiaomi/tiffany/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/xiaomi/tiffany/proprietary/etc/permissions/com.qualcomm.location.vzw_library.xml:system/etc/permissions/com.qualcomm.location.vzw_library.xml \
     vendor/xiaomi/tiffany/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/xiaomi/tiffany/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
@@ -136,8 +155,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
     vendor/xiaomi/tiffany/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
     vendor/xiaomi/tiffany/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/xiaomi/tiffany/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/xiaomi/tiffany/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/xiaomi/tiffany/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
+    vendor/xiaomi/tiffany/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf \
+    vendor/xiaomi/tiffany/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
     vendor/xiaomi/tiffany/proprietary/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg:system/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg \
     vendor/xiaomi/tiffany/proprietary/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg:system/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg \
     vendor/xiaomi/tiffany/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
@@ -145,37 +167,32 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/xiaomi/tiffany/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
     vendor/xiaomi/tiffany/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
-    vendor/xiaomi/tiffany/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
     vendor/xiaomi/tiffany/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
-    vendor/xiaomi/tiffany/proprietary/framework/com.qualcomm.location.vzw_library.jar:system/framework/com.qualcomm.location.vzw_library.jar \
     vendor/xiaomi/tiffany/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/xiaomi/tiffany/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/xiaomi/tiffany/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/xiaomi/tiffany/proprietary/framework/imscmlibrary.jar:system/framework/imscmlibrary.jar \
-    vendor/xiaomi/tiffany/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/xiaomi/tiffany/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
     vendor/xiaomi/tiffany/proprietary/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar \
     vendor/xiaomi/tiffany/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/xiaomi/tiffany/proprietary/lib/hw/audio.primary.msm8953.so:system/lib/hw/audio.primary.msm8953.so \
     vendor/xiaomi/tiffany/proprietary/lib/hw/camera.msm8953.so:system/lib/hw/camera.msm8953.so \
-    vendor/xiaomi/tiffany/proprietary/lib/hw/fingerprint.default.so:system/lib/hw/fingerprint.default.so \
-    vendor/xiaomi/tiffany/proprietary/lib/hw/sensors.msm8953.so:system/lib/hw/sensors.msm8953.so \
+    vendor/xiaomi/tiffany/proprietary/lib/hw/lights.msm8953.so:system/lib/hw/lights.msm8953.so \
     vendor/xiaomi/tiffany/proprietary/lib/libDiracAPI_SHARED.so:system/lib/libDiracAPI_SHARED.so \
     vendor/xiaomi/tiffany/proprietary/lib/libMiCameraHal.so:system/lib/libMiCameraHal.so \
     vendor/xiaomi/tiffany/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
-    vendor/xiaomi/tiffany/proprietary/lib/lib_fpc_tac_shared.so:system/lib/lib_fpc_tac_shared.so \
     vendor/xiaomi/tiffany/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
     vendor/xiaomi/tiffany/proprietary/lib/libcamera_metadata.so:system/lib/libcamera_metadata.so \
     vendor/xiaomi/tiffany/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
-    vendor/xiaomi/tiffany/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    vendor/xiaomi/tiffany/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/xiaomi/tiffany/proprietary/lib/libminui.so:system/lib/libminui.so \
+    vendor/xiaomi/tiffany/proprietary/lib/libmm-omxcore.so:system/lib/libmm-omxcore.so \
     vendor/xiaomi/tiffany/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/xiaomi/tiffany/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/xiaomi/tiffany/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
     vendor/xiaomi/tiffany/proprietary/lib/libmorpho_groupshot.so:system/lib/libmorpho_groupshot.so \
     vendor/xiaomi/tiffany/proprietary/lib/libmorpho_memory_allocator.so:system/lib/libmorpho_memory_allocator.so \
     vendor/xiaomi/tiffany/proprietary/lib/libmorpho_panorama.so:system/lib/libmorpho_panorama.so \
+    vendor/xiaomi/tiffany/proprietary/lib/libmorphohht4.0.so:system/lib/libmorphohht4.0.so \
     vendor/xiaomi/tiffany/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/xiaomi/tiffany/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
     vendor/xiaomi/tiffany/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
@@ -184,29 +201,22 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/lib64/hw/consumerir.default.so:system/lib64/hw/consumerir.default.so \
     vendor/xiaomi/tiffany/proprietary/lib64/hw/fingerprint.default.so:system/lib64/hw/fingerprint.default.so \
     vendor/xiaomi/tiffany/proprietary/lib64/hw/gf_fingerprint.default.so:system/lib64/hw/gf_fingerprint.default.so \
-    vendor/xiaomi/tiffany/proprietary/lib64/hw/sensors.msm8953.so:system/lib64/hw/sensors.msm8953.so \
+    vendor/xiaomi/tiffany/proprietary/lib64/hw/lights.msm8953.so:system/lib64/hw/lights.msm8953.so \
     vendor/xiaomi/tiffany/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
     vendor/xiaomi/tiffany/proprietary/lib64/libgf_algo.so:system/lib64/libgf_algo.so \
     vendor/xiaomi/tiffany/proprietary/lib64/libgf_ca.so:system/lib64/libgf_ca.so \
     vendor/xiaomi/tiffany/proprietary/lib64/libgf_hal.so:system/lib64/libgf_hal.so \
     vendor/xiaomi/tiffany/proprietary/lib64/libgoodixfingerprintd_binder.so:system/lib64/libgoodixfingerprintd_binder.so \
-    vendor/xiaomi/tiffany/proprietary/lib64/libloc_api_v02.so:system/lib64/libloc_api_v02.so \
-    vendor/xiaomi/tiffany/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
-    vendor/xiaomi/tiffany/proprietary/lib64/libmorpho_memory_allocator.so:system/lib64/libmorpho_memory_allocator.so \
-    vendor/xiaomi/tiffany/proprietary/lib64/libmorpho_panorama.so:system/lib64/libmorpho_panorama.so \
+    vendor/xiaomi/tiffany/proprietary/lib64/libmm-omxcore.so:system/lib64/libmm-omxcore.so \
     vendor/xiaomi/tiffany/proprietary/lib64/libstagefright_soft_flacdec.so:system/lib64/libstagefright_soft_flacdec.so \
     vendor/xiaomi/tiffany/proprietary/lib64/libvpplibrary.so:system/lib64/libvpplibrary.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
-    vendor/xiaomi/tiffany/proprietary/vendor/bin/hbtp_daemon:system/vendor/bin/hbtp_daemon \
     vendor/xiaomi/tiffany/proprietary/vendor/bin/mm-pp-dpps:system/vendor/bin/mm-pp-dpps \
     vendor/xiaomi/tiffany/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
     vendor/xiaomi/tiffany/proprietary/vendor/bin/qseeproxydaemon:system/vendor/bin/qseeproxydaemon \
-    vendor/xiaomi/tiffany/proprietary/vendor/bin/qseeproxysampledaemon:system/vendor/bin/qseeproxysampledaemon \
     vendor/xiaomi/tiffany/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/xiaomi/tiffany/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/xiaomi/tiffany/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/xiaomi/tiffany/proprietary/vendor/etc/diracmobile.config:system/vendor/etc/diracmobile.config \
-    vendor/xiaomi/tiffany/proprietary/vendor/etc/msm_irqbalance.conf:system/vendor/etc/msm_irqbalance.conf \
     vendor/xiaomi/tiffany/proprietary/vendor/framework/qti-vzw-ims-internal.jar:system/vendor/framework/qti-vzw-ims-internal.jar \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
@@ -216,24 +226,18 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/egl/libq3dtools_esx.so:system/vendor/lib/egl/libq3dtools_esx.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/hw/activity_recognition.msm8953.so:system/vendor/lib/hw/activity_recognition.msm8953.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/hw/gatekeeper.msm8953.so:system/vendor/lib/hw/gatekeeper.msm8953.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/hw/keystore.msm8953.so:system/vendor/lib/hw/keystore.msm8953.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/hw/sound_trigger.primary.msm8953.so:system/vendor/lib/hw/sound_trigger.primary.msm8953.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/hw/vulkan.msm8953.so:system/vendor/lib/hw/vulkan.msm8953.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/hw/wbc_hal.default.so:system/vendor/lib/hw/wbc_hal.default.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/lib-sec-disp.so:system/vendor/lib/lib-sec-disp.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libAlacSwDec.so:system/vendor/lib/libAlacSwDec.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libApeSwDec.so:system/vendor/lib/libApeSwDec.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libChamomilePA.so:system/vendor/lib/libChamomilePA.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libEGL_adreno.so:system/vendor/lib/libEGL_adreno.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libFaceGrade.so:system/vendor/lib/libFaceGrade.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libFaceProc.so:system/vendor/lib/libFaceProc.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libGPTEE.so:system/vendor/lib/libGPTEE.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libGPreqcancel.so:system/vendor/lib/libGPreqcancel.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libGPreqcancel_svc.so:system/vendor/lib/libGPreqcancel_svc.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libFlacSwDec.so:system/vendor/lib/libFlacSwDec.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libOmxAlacDec.so:system/vendor/lib/libOmxAlacDec.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libOmxAlacDecSw.so:system/vendor/lib/libOmxAlacDecSw.so \
@@ -248,10 +252,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libRecoFace.so:system/vendor/lib/libRecoFace.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libSecureUILib.so:system/vendor/lib/libSecureUILib.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libStDrvInt.so:system/vendor/lib/libStDrvInt.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libXMFD_AgeGender.so:system/vendor/lib/libXMFD_AgeGender.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/lib_lowlight.so:system/vendor/lib/lib_lowlight.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
@@ -263,14 +265,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libactuator_dw9763_ov12a10.so:system/vendor/lib/libactuator_dw9763_ov12a10.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libactuator_dw9763_ov13880.so:system/vendor/lib/libactuator_dw9763_ov13880.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libactuator_ofilm_dw9763.so:system/vendor/lib/libactuator_ofilm_dw9763.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libactuator_pseudo.so:system/vendor/lib/libactuator_pseudo.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libadm.so:system/vendor/lib/libadm.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libadpcmdec.so:system/vendor/lib/libadpcmdec.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libadsp_default_listener.so:system/vendor/lib/libadsp_default_listener.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libalarmservice_jni.so:system/vendor/lib/libalarmservice_jni.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libarcsoft_beauty_shot.so:system/vendor/lib/libarcsoft_beauty_shot.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libarcsoft_beautyshot.so:system/vendor/lib/libarcsoft_beautyshot.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libarcsoft_beautyshot_image_algorithm.so:system/vendor/lib/libarcsoft_beautyshot_image_algorithm.so \
@@ -283,6 +283,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libc2d30-a5xx.so:system/vendor/lib/libc2d30-a5xx.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libcaffe.so:system/vendor/lib/libcaffe.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromaflash.so:system/vendor/lib/libchromaflash.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_csidtg_common.so:system/vendor/lib/libchromatix_csidtg_common.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_csidtg_cpp_preview.so:system/vendor/lib/libchromatix_csidtg_cpp_preview.so \
@@ -300,6 +301,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_cpp_liveshot.so:system/vendor/lib/libchromatix_ov12a10_arc_cpp_liveshot.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_cpp_preview.so:system/vendor/lib/libchromatix_ov12a10_arc_cpp_preview.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_cpp_snapshot.so:system/vendor/lib/libchromatix_ov12a10_arc_cpp_snapshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_cpp_snapshot_hht.so:system/vendor/lib/libchromatix_ov12a10_arc_cpp_snapshot_hht.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_cpp_video.so:system/vendor/lib/libchromatix_ov12a10_arc_cpp_video.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_cpp_video_4k.so:system/vendor/lib/libchromatix_ov12a10_arc_cpp_video_4k.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_default_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_default_preview_dw9763.so \
@@ -319,6 +321,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_liveshot.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_liveshot.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_preview.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_preview.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_snapshot.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_snapshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_snapshot_hht.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_snapshot_hht.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_video.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_video.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_video_4k.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_cpp_video_4k.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_default_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_default_preview_dw9763.so \
@@ -332,12 +335,62 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_postproc.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_postproc.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_preview.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_preview.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_snapshot.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_snapshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_4k_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_4k_preview_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_4k_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_4k_video_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_common.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_common.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_cpp_hfr_120.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_cpp_hfr_60.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_cpp_hfr_90.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_cpp_liveshot.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_cpp_liveshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_cpp_preview.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_cpp_preview.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_cpp_snapshot.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_cpp_snapshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_cpp_video.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_cpp_video.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_cpp_video_4k.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_cpp_video_4k.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_default_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_default_preview_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_default_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_default_video_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_hfr_120.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_hfr_120.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_hfr_120_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_hfr_120_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_hfr_60.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_hfr_60.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_hfr_60_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_hfr_60_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_hfr_90.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_hfr_90.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_hfr_90_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_hfr_90_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_postproc.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_postproc.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_preview.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_preview.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_snapshot.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_snapshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_video_4k.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_video_4k.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_zsl_preview_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_subflash_zsl_video_dw9763.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_video_4k.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_video_4k.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_zsl_preview_dw9763.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_ofilm_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_ofilm_zsl_video_dw9763.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_postproc.so:system/vendor/lib/libchromatix_ov12a10_arc_postproc.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_preview.so:system/vendor/lib/libchromatix_ov12a10_arc_preview.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_snapshot.so:system/vendor/lib/libchromatix_ov12a10_arc_snapshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_4k_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_4k_preview_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_4k_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_4k_video_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_common.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_common.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_cpp_hfr_120.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_cpp_hfr_60.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_cpp_hfr_90.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_cpp_liveshot.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_cpp_liveshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_cpp_preview.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_cpp_preview.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_cpp_snapshot.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_cpp_snapshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_cpp_video.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_cpp_video.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_cpp_video_4k.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_cpp_video_4k.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_default_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_default_preview_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_default_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_default_video_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_hfr_120.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_hfr_120.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_hfr_120_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_hfr_120_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_hfr_60.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_hfr_60.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_hfr_60_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_hfr_60_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_hfr_90.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_hfr_90.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_hfr_90_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_hfr_90_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_postproc.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_postproc.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_preview.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_preview.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_snapshot.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_snapshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_video_4k.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_video_4k.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_zsl_preview_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_subflash_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_subflash_zsl_video_dw9763.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_video_4k.so:system/vendor/lib/libchromatix_ov12a10_arc_video_4k.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_zsl_preview_dw9763.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_arc_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_arc_zsl_video_dw9763.so \
@@ -360,31 +413,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_hfr_90_dw9763.so:system/vendor/lib/libchromatix_ov12a10_hfr_90_dw9763.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_4k_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_4k_preview_dw9763.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_4k_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_4k_video_dw9763.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_4k_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_4k_preview_dw9763.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_4k_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_4k_video_dw9763.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_common.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_common.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_hfr_120.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_hfr_60.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_hfr_90.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_liveshot.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_liveshot.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_preview.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_preview.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_snapshot.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_snapshot.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_video.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_video.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_video_4k.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_cpp_video_4k.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_default_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_default_preview_dw9763.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_default_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_default_video_dw9763.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_120.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_120.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_120_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_120_dw9763.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_60.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_60.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_60_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_60_dw9763.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_90.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_90.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_90_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_hfr_90_dw9763.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_postproc.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_postproc.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_preview.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_preview.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_snapshot.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_snapshot.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_video_4k.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_video_4k.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_zsl_preview_dw9763.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_c6a_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov12a10_ofilm_c6a_zsl_video_dw9763.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_common.so:system/vendor/lib/libchromatix_ov12a10_ofilm_common.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov12a10_ofilm_cpp_hfr_120.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov12a10_ofilm_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov12a10_ofilm_cpp_hfr_60.so \
@@ -425,6 +453,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_cpp_liveshot.so:system/vendor/lib/libchromatix_ov13880_arc_cpp_liveshot.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_cpp_preview.so:system/vendor/lib/libchromatix_ov13880_arc_cpp_preview.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_cpp_snapshot.so:system/vendor/lib/libchromatix_ov13880_arc_cpp_snapshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_cpp_snapshot_hht.so:system/vendor/lib/libchromatix_ov13880_arc_cpp_snapshot_hht.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_cpp_video.so:system/vendor/lib/libchromatix_ov13880_arc_cpp_video.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_cpp_video_4k.so:system/vendor/lib/libchromatix_ov13880_arc_cpp_video_4k.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_default_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_default_preview_dw9763.so \
@@ -444,6 +473,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_liveshot.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_liveshot.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_preview.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_preview.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_snapshot.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_snapshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_snapshot_hht.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_snapshot_hht.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_video.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_video.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_video_4k.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_cpp_video_4k.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_default_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_default_preview_dw9763.so \
@@ -457,12 +487,62 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_postproc.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_postproc.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_preview.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_preview.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_snapshot.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_snapshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_4k_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_4k_preview_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_4k_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_4k_video_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_common.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_common.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_cpp_hfr_120.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_cpp_hfr_60.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_cpp_hfr_90.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_cpp_liveshot.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_cpp_liveshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_cpp_preview.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_cpp_preview.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_cpp_snapshot.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_cpp_snapshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_cpp_video.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_cpp_video.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_cpp_video_4k.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_cpp_video_4k.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_default_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_default_preview_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_default_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_default_video_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_hfr_120.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_hfr_120.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_hfr_120_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_hfr_120_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_hfr_60.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_hfr_60.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_hfr_60_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_hfr_60_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_hfr_90.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_hfr_90.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_hfr_90_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_hfr_90_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_postproc.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_postproc.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_preview.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_preview.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_snapshot.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_snapshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_video_4k.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_video_4k.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_zsl_preview_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_subflash_zsl_video_dw9763.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_video_4k.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_video_4k.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_zsl_preview_dw9763.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_ofilm_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_ofilm_zsl_video_dw9763.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_postproc.so:system/vendor/lib/libchromatix_ov13880_arc_postproc.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_preview.so:system/vendor/lib/libchromatix_ov13880_arc_preview.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_snapshot.so:system/vendor/lib/libchromatix_ov13880_arc_snapshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_4k_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_4k_preview_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_4k_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_4k_video_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_common.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_common.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_cpp_hfr_120.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_cpp_hfr_60.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_cpp_hfr_90.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_cpp_liveshot.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_cpp_liveshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_cpp_preview.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_cpp_preview.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_cpp_snapshot.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_cpp_snapshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_cpp_video.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_cpp_video.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_cpp_video_4k.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_cpp_video_4k.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_default_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_default_preview_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_default_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_default_video_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_hfr_120.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_hfr_120.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_hfr_120_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_hfr_120_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_hfr_60.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_hfr_60.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_hfr_60_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_hfr_60_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_hfr_90.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_hfr_90.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_hfr_90_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_hfr_90_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_postproc.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_postproc.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_preview.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_preview.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_snapshot.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_snapshot.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_video_4k.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_video_4k.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_zsl_preview_dw9763.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_subflash_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_subflash_zsl_video_dw9763.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_video_4k.so:system/vendor/lib/libchromatix_ov13880_arc_video_4k.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_zsl_preview_dw9763.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_arc_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_arc_zsl_video_dw9763.so \
@@ -514,52 +594,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_video_4k.so:system/vendor/lib/libchromatix_ov13880_video_4k.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_zsl_preview_dw9763.so:system/vendor/lib/libchromatix_ov13880_zsl_preview_dw9763.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov13880_zsl_video_dw9763.so:system/vendor/lib/libchromatix_ov13880_zsl_video_dw9763.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_common.so:system/vendor/lib/libchromatix_ov5675_qtech_common.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_cpp_hfr_120.so:system/vendor/lib/libchromatix_ov5675_qtech_cpp_hfr_120.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_cpp_hfr_60.so:system/vendor/lib/libchromatix_ov5675_qtech_cpp_hfr_60.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_cpp_hfr_90.so:system/vendor/lib/libchromatix_ov5675_qtech_cpp_hfr_90.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_cpp_liveshot.so:system/vendor/lib/libchromatix_ov5675_qtech_cpp_liveshot.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_cpp_preview.so:system/vendor/lib/libchromatix_ov5675_qtech_cpp_preview.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_cpp_snapshot.so:system/vendor/lib/libchromatix_ov5675_qtech_cpp_snapshot.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_cpp_video.so:system/vendor/lib/libchromatix_ov5675_qtech_cpp_video.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_default_preview_3a.so:system/vendor/lib/libchromatix_ov5675_qtech_default_preview_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_default_video.so:system/vendor/lib/libchromatix_ov5675_qtech_default_video.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_default_video_3a.so:system/vendor/lib/libchromatix_ov5675_qtech_default_video_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_hfr_120.so:system/vendor/lib/libchromatix_ov5675_qtech_hfr_120.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_hfr_120_3a.so:system/vendor/lib/libchromatix_ov5675_qtech_hfr_120_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_hfr_60.so:system/vendor/lib/libchromatix_ov5675_qtech_hfr_60.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_hfr_60_3a.so:system/vendor/lib/libchromatix_ov5675_qtech_hfr_60_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_hfr_90.so:system/vendor/lib/libchromatix_ov5675_qtech_hfr_90.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_hfr_90_3a.so:system/vendor/lib/libchromatix_ov5675_qtech_hfr_90_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_liveshot.so:system/vendor/lib/libchromatix_ov5675_qtech_liveshot.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_postproc.so:system/vendor/lib/libchromatix_ov5675_qtech_postproc.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_preview.so:system/vendor/lib/libchromatix_ov5675_qtech_preview.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_snapshot.so:system/vendor/lib/libchromatix_ov5675_qtech_snapshot.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_zsl_preview_3a.so:system/vendor/lib/libchromatix_ov5675_qtech_zsl_preview_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_ov5675_qtech_zsl_video_3a.so:system/vendor/lib/libchromatix_ov5675_qtech_zsl_video_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_common.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_common.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_hfr_120.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_hfr_60.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_hfr_90.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_liveshot.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_preview.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_preview.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_snapshot.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_video.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_cpp_video.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_default_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_default_preview_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_default_video.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_default_video.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_default_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_default_video_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_120.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_120_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_120_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_60.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_60_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_60_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_90.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_90_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_hfr_90_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_liveshot.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_postproc.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_postproc.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_preview.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_preview.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_snapshot.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_zsl_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_zsl_preview_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_zsl_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_c6a_zsl_video_3a.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_common.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_common.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_hfr_120.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_cpp_hfr_60.so \
@@ -583,29 +617,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_snapshot.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_zsl_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_zsl_preview_3a.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_ofilm_zsl_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_ofilm_zsl_video_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_common.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_common.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_hfr_120.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_hfr_60.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_hfr_90.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_liveshot.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_preview.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_preview.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_snapshot.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_video.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_cpp_video.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_default_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_default_preview_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_default_video.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_default_video.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_default_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_default_video_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_120.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_120_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_120_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_60.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_60_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_60_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_90.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_90.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_90_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_hfr_90_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_liveshot.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_liveshot.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_postproc.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_postproc.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_preview.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_preview.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_snapshot.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_snapshot.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_zsl_preview_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_zsl_preview_3a.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_c6a_zsl_video_3a.so:system/vendor/lib/libchromatix_s5k5e8_qtech_c6a_zsl_video_3a.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_common.so:system/vendor/lib/libchromatix_s5k5e8_qtech_common.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_cpp_hfr_120.so:system/vendor/lib/libchromatix_s5k5e8_qtech_cpp_hfr_120.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libchromatix_s5k5e8_qtech_cpp_hfr_60.so:system/vendor/lib/libchromatix_s5k5e8_qtech_cpp_hfr_60.so \
@@ -657,7 +668,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libcppf.so:system/vendor/lib/libcppf.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libdpmctmgr.so:system/vendor/lib/libdpmctmgr.so \
@@ -666,38 +676,28 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libdpmnsrm.so:system/vendor/lib/libdpmnsrm.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libdpmtcm.so:system/vendor/lib/libdpmtcm.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libdrc.so:system/vendor/lib/libdrc.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libdualcameraddm.so:system/vendor/lib/libdualcameraddm.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libflash_pmic.so:system/vendor/lib/libflash_pmic.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libflp.so:system/vendor/lib/libflp.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libhwdaphal.so:system/vendor/lib/libhwdaphal.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libjni_dualcamera.so:system/vendor/lib/libjni_dualcamera.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libjni_filtergenerator.so:system/vendor/lib/libjni_filtergenerator.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libjni_trueportrait.so:system/vendor/lib/libjni_trueportrait.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libjpegdmahw.so:system/vendor/lib/libjpegdmahw.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libllvd_smore.so:system/vendor/lib/libllvd_smore.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libllvm-qgl.so:system/vendor/lib/libllvm-qgl.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libloc_ext.so:system/vendor/lib/libloc_ext.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/liblowi_wifihal.so:system/vendor/lib/liblowi_wifihal.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/liblowi_wifihal_nl.so:system/vendor/lib/liblowi_wifihal_nl.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmm-disp-apis.so:system/vendor/lib/libmm-disp-apis.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libmm-hdcpmgr.so:system/vendor/lib/libmm-hdcpmgr.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmm-qdcm.so:system/vendor/lib/libmm-qdcm.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmQSM.so:system/vendor/lib/libmmQSM.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
@@ -718,8 +718,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera2_stats_modules.so:system/vendor/lib/libmmcamera2_stats_modules.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_arc_ofilm_ov12a10_eeprom.so:system/vendor/lib/libmmcamera_arc_ofilm_ov12a10_eeprom.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_arc_ofilm_ov13880_eeprom.so:system/vendor/lib/libmmcamera_arc_ofilm_ov13880_eeprom.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_arc_ov12a10_eeprom.so:system/vendor/lib/libmmcamera_arc_ov12a10_eeprom.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_arc_ov13880_eeprom.so:system/vendor/lib/libmmcamera_arc_ov13880_eeprom.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_cac3_lib.so:system/vendor/lib/libmmcamera_cac3_lib.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_chromaflash_lib.so:system/vendor/lib/libmmcamera_chromaflash_lib.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_csidtg.so:system/vendor/lib/libmmcamera_csidtg.so \
@@ -769,21 +767,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_isp_template.so:system/vendor/lib/libmmcamera_isp_template.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_isp_wb40.so:system/vendor/lib/libmmcamera_isp_wb40.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_llvd.so:system/vendor/lib/libmmcamera_llvd.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_ofilm_ov12a10_eeprom.so:system/vendor/lib/libmmcamera_ofilm_ov12a10_eeprom.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_ofilm_ov13880_eeprom.so:system/vendor/lib/libmmcamera_ofilm_ov13880_eeprom.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_ofilm_s5k5e8_eeprom.so:system/vendor/lib/libmmcamera_ofilm_s5k5e8_eeprom.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_optizoom_lib.so:system/vendor/lib/libmmcamera_optizoom_lib.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_ov12a10.so:system/vendor/lib/libmmcamera_ov12a10.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_ov12a10_eeprom.so:system/vendor/lib/libmmcamera_ov12a10_eeprom.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_ov13880.so:system/vendor/lib/libmmcamera_ov13880.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_ov13880_eeprom.so:system/vendor/lib/libmmcamera_ov13880_eeprom.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_ov5675_qtech.so:system/vendor/lib/libmmcamera_ov5675_qtech.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_paaf_lib.so:system/vendor/lib/libmmcamera_paaf_lib.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_ppbase_module.so:system/vendor/lib/libmmcamera_ppbase_module.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_ppeiscore.so:system/vendor/lib/libmmcamera_ppeiscore.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_qtech_ov5675_eeprom.so:system/vendor/lib/libmmcamera_qtech_ov5675_eeprom.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_quadracfa.so:system/vendor/lib/libmmcamera_quadracfa.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_s5k5e8_ofilm.so:system/vendor/lib/libmmcamera_s5k5e8_ofilm.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libmmcamera_s5k5e8_qtech.so:system/vendor/lib/libmmcamera_s5k5e8_qtech.so \
@@ -817,7 +810,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libqct_resampler.so:system/vendor/lib/libqct_resampler.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libqisl.so:system/vendor/lib/libqisl.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
@@ -835,60 +827,34 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libqti-wl.so:system/vendor/lib/libqti-wl.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libqti_performance.so:system/vendor/lib/libqti_performance.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libremosaic_daemon.so:system/vendor/lib/libremosaic_daemon.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscalar.so:system/vendor/lib/libscalar.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveBlobDescriptor.so:system/vendor/lib/libscveBlobDescriptor.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveBlobDescriptor_stub.so:system/vendor/lib/libscveBlobDescriptor_stub.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveCleverCapture.so:system/vendor/lib/libscveCleverCapture.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveCleverCapture_stub.so:system/vendor/lib/libscveCleverCapture_stub.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveCommon.so:system/vendor/lib/libscveCommon.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveCommon_stub.so:system/vendor/lib/libscveCommon_stub.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveFaceRecognition.so:system/vendor/lib/libscveFaceRecognition.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveImageCloning.so:system/vendor/lib/libscveImageCloning.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveImageCorrection.so:system/vendor/lib/libscveImageCorrection.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveImageRemoval.so:system/vendor/lib/libscveImageRemoval.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveMotionVector.so:system/vendor/lib/libscveMotionVector.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveObjectMatting.so:system/vendor/lib/libscveObjectMatting.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveObjectMatting_stub.so:system/vendor/lib/libscveObjectMatting_stub.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveObjectSegmentation.so:system/vendor/lib/libscveObjectSegmentation.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveObjectSegmentation_stub.so:system/vendor/lib/libscveObjectSegmentation_stub.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveObjectTracker.so:system/vendor/lib/libscveObjectTracker.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveObjectTracker_stub.so:system/vendor/lib/libscveObjectTracker_stub.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscvePanorama.so:system/vendor/lib/libscvePanorama.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscvePanorama_lite.so:system/vendor/lib/libscvePanorama_lite.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveTextReco.so:system/vendor/lib/libscveTextReco.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveTextRecoPostProcessing.so:system/vendor/lib/libscveTextRecoPostProcessing.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libscveTextReco_stub.so:system/vendor/lib/libscveTextReco_stub.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libsd_sdk_display.so:system/vendor/lib/libsd_sdk_display.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libsdsprpc.so:system/vendor/lib/libsdsprpc.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libsecureui.so:system/vendor/lib/libsecureui.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libsecureui_svcsock.so:system/vendor/lib/libsecureui_svcsock.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libsecureuisvc_jni.so:system/vendor/lib/libsecureuisvc_jni.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libsdm-color.so:system/vendor/lib/libsdm-color.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libsdm-diag.so:system/vendor/lib/libsdm-diag.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libsdmextension.so:system/vendor/lib/libsdmextension.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libseemore.so:system/vendor/lib/libseemore.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libseestraight.so:system/vendor/lib/libseestraight.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libslimclient.so:system/vendor/lib/libslimclient.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libsensor_test.so:system/vendor/lib/libsensor_test.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libsensor_user_cal.so:system/vendor/lib/libsensor_user_cal.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libsmwrapper.so:system/vendor/lib/libsmwrapper.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libsurround_3mic_proc.so:system/vendor/lib/libsurround_3mic_proc.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libtrueportrait.so:system/vendor/lib/libtrueportrait.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/libtruescanner.so:system/vendor/lib/libtruescanner.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libvqzip.so:system/vendor/lib/libvqzip.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libwqe.so:system/vendor/lib/libwqe.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib/mmi_sensor.so:system/vendor/lib/mmi_sensor.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_AUE_Forward_skel.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so:system/vendor/lib/rfsa/adsp/libFastRPC_UTF_Forward_skel.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
@@ -918,7 +884,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/hw/gatekeeper.msm8953.so:system/vendor/lib64/hw/gatekeeper.msm8953.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/hw/keystore.msm8953.so:system/vendor/lib64/hw/keystore.msm8953.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/hw/vulkan.msm8953.so:system/vendor/lib64/hw/vulkan.msm8953.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/hw/wbc_hal.default.so:system/vendor/lib64/hw/wbc_hal.default.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/lib-dplmedia.so:system/vendor/lib64/lib-dplmedia.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/lib-ims-rcscmjni.so:system/vendor/lib64/lib-ims-rcscmjni.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/lib-imsSDP.so:system/vendor/lib64/lib-imsSDP.so \
@@ -942,10 +907,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libDRPlugin.so:system/vendor/lib64/libDRPlugin.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libEGL_adreno.so:system/vendor/lib64/libEGL_adreno.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libFlacSwDec.so:system/vendor/lib64/libFlacSwDec.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libGPTEE.so:system/vendor/lib64/libGPTEE.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libGPreqcancel.so:system/vendor/lib64/libGPreqcancel.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libGPreqcancel_svc.so:system/vendor/lib64/libGPreqcancel_svc.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libI420colorconvert.so:system/vendor/lib64/libI420colorconvert.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libOmxAacDec.so:system/vendor/lib64/libOmxAacDec.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libOmxEvrcDec.so:system/vendor/lib64/libOmxEvrcDec.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libOmxQcelp13Dec.so:system/vendor/lib64/libOmxQcelp13Dec.so \
@@ -1006,6 +972,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libizat_client_api.so:system/vendor/lib64/libizat_client_api.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libizat_core.so:system/vendor/lib64/libizat_core.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libjni_clearsight.so:system/vendor/lib64/libjni_clearsight.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libjni_dualcamera.so:system/vendor/lib64/libjni_dualcamera.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libjni_filtergenerator.so:system/vendor/lib64/libjni_filtergenerator.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
@@ -1019,13 +988,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/liblowi_wifihal_nl.so:system/vendor/lib64/liblowi_wifihal_nl.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/liblqe.so:system/vendor/lib64/liblqe.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libmdmdetect.so:system/vendor/lib64/libmdmdetect.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libmm-color-convertor.so:system/vendor/lib64/libmm-color-convertor.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libmm-disp-apis.so:system/vendor/lib64/libmm-disp-apis.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libmm-hdcpmgr.so:system/vendor/lib64/libmm-hdcpmgr.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libmm-qdcm.so:system/vendor/lib64/libmm-qdcm.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libmmQSM.so:system/vendor/lib64/libmmQSM.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libmorpho_group_portrait.so:system/vendor/lib64/libmorpho_group_portrait.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libmorpho_panorama_gp.so:system/vendor/lib64/libmorpho_panorama_gp.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libmmosal.so:system/vendor/lib64/libmmosal.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libnetmgr.so:system/vendor/lib64/libnetmgr.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libperipheral_client.so:system/vendor/lib64/libperipheral_client.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libqcci_legacy.so:system/vendor/lib64/libqcci_legacy.so \
@@ -1059,38 +1026,17 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/librs_adreno_sha1.so:system/vendor/lib64/librs_adreno_sha1.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscalar.so:system/vendor/lib64/libscalar.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscale.so:system/vendor/lib64/libscale.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveBlobDescriptor.so:system/vendor/lib64/libscveBlobDescriptor.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveBlobDescriptor_stub.so:system/vendor/lib64/libscveBlobDescriptor_stub.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveCleverCapture.so:system/vendor/lib64/libscveCleverCapture.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveCleverCapture_stub.so:system/vendor/lib64/libscveCleverCapture_stub.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveCommon.so:system/vendor/lib64/libscveCommon.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveCommon_stub.so:system/vendor/lib64/libscveCommon_stub.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveFaceRecognition.so:system/vendor/lib64/libscveFaceRecognition.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveImageCloning.so:system/vendor/lib64/libscveImageCloning.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveImageCorrection.so:system/vendor/lib64/libscveImageCorrection.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveImageRemoval.so:system/vendor/lib64/libscveImageRemoval.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveMotionVector.so:system/vendor/lib64/libscveMotionVector.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveObjectMatting.so:system/vendor/lib64/libscveObjectMatting.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveObjectMatting_stub.so:system/vendor/lib64/libscveObjectMatting_stub.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveObjectSegmentation.so:system/vendor/lib64/libscveObjectSegmentation.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveObjectSegmentation_stub.so:system/vendor/lib64/libscveObjectSegmentation_stub.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveObjectTracker.so:system/vendor/lib64/libscveObjectTracker.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveObjectTracker_stub.so:system/vendor/lib64/libscveObjectTracker_stub.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscvePanorama.so:system/vendor/lib64/libscvePanorama.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscvePanorama_lite.so:system/vendor/lib64/libscvePanorama_lite.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveTextReco.so:system/vendor/lib64/libscveTextReco.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveTextRecoPostProcessing.so:system/vendor/lib64/libscveTextRecoPostProcessing.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libscveTextReco_stub.so:system/vendor/lib64/libscveTextReco_stub.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libsd_sdk_display.so:system/vendor/lib64/libsd_sdk_display.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libsdm-color.so:system/vendor/lib64/libsdm-color.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libsdm-diag.so:system/vendor/lib64/libsdm-diag.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libsdmextension.so:system/vendor/lib64/libsdmextension.so \
-    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libsdsprpc.so:system/vendor/lib64/libsdsprpc.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libsecureui.so:system/vendor/lib64/libsecureui.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libsecureui_svcsock.so:system/vendor/lib64/libsecureui_svcsock.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libsecureuisvc_jni.so:system/vendor/lib64/libsecureuisvc_jni.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libsensor1.so:system/vendor/lib64/libsensor1.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libsensor_reg.so:system/vendor/lib64/libsensor_reg.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libsensor_test.so:system/vendor/lib64/libsensor_test.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib64/libsensor_user_cal.so:system/vendor/lib64/libsensor_user_cal.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libsettings.so:system/vendor/lib64/libsettings.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libslimclient.so:system/vendor/lib64/libslimclient.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
@@ -1108,6 +1054,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libxt_native.so:system/vendor/lib64/libxt_native.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libxtadapter.so:system/vendor/lib64/libxtadapter.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/libxtwifi_ulp_adaptor.so:system/vendor/lib64/libxtwifi_ulp_adaptor.so \
+    vendor/xiaomi/tiffany/proprietary/vendor/lib64/mmi_sensor.so:system/vendor/lib64/mmi_sensor.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/sensor_calibrate.so:system/vendor/lib64/sensor_calibrate.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so \
     vendor/xiaomi/tiffany/proprietary/vendor/lib64/soundfx/libqcbassboost.so:system/vendor/lib64/soundfx/libqcbassboost.so \
@@ -1116,15 +1063,18 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/tiffany/proprietary/vendor/qcril.db:system/vendor/qcril.db
 
 PRODUCT_PACKAGES += \
+    libloc_api_v02 \
+    libloc_ds_api \
     libsdm-disp-apis \
     libtime_genoff \
     libts_detected_face_hal \
+    libts_detected_face_jni \
     libts_face_beautify_hal \
+    libts_face_beautify_jni \
     QtiTelephonyService \
     TimeService \
     datastatusnotification \
     embms \
-    fastdormancy \
     shutdownlistener \
     CNEService \
     QtiTetherService \
@@ -1132,7 +1082,12 @@ PRODUCT_PACKAGES += \
     qcrilmsgtunnel \
     ims \
     imssettings \
-    qcrilhook \
     com.qti.location.sdk \
+    com.qualcomm.location.vzw_library \
+    izat.xt.srv \
+    qcrilhook \
+    qdcm_calib_data_ft8716_fhd_video_mode_dsi_panel \
+    qdcm_calib_data_ili7807_fhd_video_mode_dsi_panel \
     qdcm_calib_data_nt35532_fhd_video_mode_dsi_panel \
-    qdcm_calib_data_nt35596_tianma_fhd_video_mode_dsi_panel
+    qdcm_calib_data_nt35596_tianma_fhd_video_mode_dsi_panel \
+    qdcm_calib_data_otm1911_fhd_video_mode_dsi_panel
